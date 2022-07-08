@@ -1,0 +1,249 @@
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+.container{
+    margin: 80px auto 0 auto;
+    height: 720px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 0px 10px 50px -3px hsl(179, 62%, 43%); */
+    box-shadow: 0px 25px 50px -3px rgba(41,177,175,0.38);
+    border-radius: 10px;
+}
+
+.community{
+    background-color: var(--LightGray);
+    padding: 0 30px;
+    width: 260px;
+    height: 240px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.community__title{
+    color: var(--Cyan);
+    font-size: 0.8em;
+    padding-top: 10px;
+}
+
+.community__sub{
+    color: var(--BrightYellow);
+    font-size: 0.8em;
+}
+
+.community__paragraph p{
+    color: var(--GrayishBlue);
+    line-height: 1.99;
+    font-size: 0.8em;
+}
+
+.subscription{
+    background-color: var(--Cyan);
+    padding: 0 30px;
+    width: 260px;
+    height: 240px;
+}
+
+.subscription__title{
+    color: var(--LightGray);
+    font-size: 0.8em;
+    padding-top: 10px;
+}
+
+.subscription__price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--LightGray);
+}
+
+.subscription__price h1{
+    font-size: 1.8em;
+    margin: 0;
+}
+
+
+.subscription__price h4{
+    color: rgba(255, 255, 255, 0.712);
+    font-size: 0.9em;
+    margin: 0;
+    padding-left: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.subscription__sub{
+    font-size: 0.8em;
+    color: var(--LightGray);
+}
+
+
+.cta a{
+    background-color: var(--BrightYellow);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 6px 14px 1px rgba(0, 0, 0, 0.253);
+    text-decoration: none;
+    color: var(--LightGray);
+    padding: 15px 99px;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color, color .4s ease;
+}
+
+.cta a:hover{
+    background-color: var(--LightGray);
+    color: var(--Cyan);
+}
+
+
+.why{
+    background-color: hsl(179, 47%, 56%);
+    padding: 0 30px;
+    width: 260px;
+    height: 240px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.why__title{
+    color: var(--LightGray);
+    font-size: 0.8em;
+    padding-top: 10px;
+}
+
+.why__enlaces{
+    display: flex;
+    flex-direction: column;
+}
+
+.why__enlaces a{
+    text-decoration: none;
+    color: hsl(203, 26%, 88%);
+    line-height: 1.3;
+    transition: color .3s ease;
+    font-size: 1em;
+}
+
+.why__enlaces a:hover{
+    color: var(--BrightYellow);
+    /* font-size: 1.1em; */
+    font-weight: 700;
+}
+
+.footer{
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+    width: 400px;
+    margin-top: 200px;
+    border: 1px solid var(--Cyan);
+    border-radius: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--Cyan);
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        height: 490px;
+        width: 700px;
+        display: flex;
+    }
+
+    .community{
+        width: 640px;
+    }
+
+    .community__title{
+        font-size: 1em;
+    }
+    
+    .community__sub{
+        font-size: 0.9em;
+    }
+    
+    .community__paragraph p{
+        font-size: 1em;
+    }
+
+    .sectiondesk{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .subscription{
+        height: 260px;
+        width: 300px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    .subscription__title{
+        font-size: 1em;
+    }
+    
+    .subscription__price{
+        color: var(--LightGray);
+    }
+    
+    .subscription__price h1{
+        font-size: 1.8em;
+    }
+    
+    
+    .subscription__price h4{
+        font-size: 1em;
+    }
+    
+    .subscription__sub{
+        font-size: 0.9em;
+    }
+    
+    
+    .cta a{
+        padding: 15px 105px;
+    }
+
+    .why{
+        width: 300px;
+        border-bottom-left-radius: 0px;
+        height: 260px;
+    }
+    
+    .why__title{
+        font-size: 1em;
+    }
+    
+    
+    .why__enlaces a{
+        text-decoration: none;
+        color: hsl(203, 26%, 88%);
+        line-height: 1.3;
+        transition: color .3s ease;
+        font-size: 1em;
+    }
+    
+    .why__enlaces a:hover{
+        color: var(--BrightYellow);
+        /* font-size: 1.1em; */
+        font-weight: 700;
+    }
+}
